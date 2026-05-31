@@ -312,7 +312,7 @@ a {
   margin-top: 8px;
 }
 
-.publication a,
+.pub-links > a,
 .bibtex summary {
   display: inline-flex;
   align-items: center;
@@ -328,7 +328,15 @@ a {
   cursor: pointer;
 }
 
-.publication a:hover,
+.pub-venue a {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.pub-links > a:hover,
+.pub-venue a:hover,
 .contact-line:hover span,
 .bibtex summary:hover {
   text-decoration: underline;
