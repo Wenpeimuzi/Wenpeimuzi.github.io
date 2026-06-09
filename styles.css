@@ -143,7 +143,7 @@ a {
 
 .profile-photo {
   display: block;
-  width: min(100%, 80px);
+  width: min(100%, 100px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 68% 50%;
@@ -251,7 +251,7 @@ a {
 
 .publication-list {
   display: grid;
-  gap: 14px;
+  gap: 8px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -267,8 +267,8 @@ a {
 .publication {
   display: grid;
   grid-template-columns: 74px minmax(0, 1fr);
-  gap: 20px;
-  padding: 18px 0 22px;
+  gap: 14px;
+  padding: 12px 0 14px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -276,6 +276,7 @@ a {
   margin: 2px 0 0;
   color: var(--green);
   font-family: Lato, Arial, sans-serif;
+  font-size: 0.92rem;
   font-weight: 850;
 }
 
@@ -299,7 +300,9 @@ a {
 }
 
 .publication p {
-  margin: 3px 0 0;
+  margin: 2px 0 0;
+  font-size: 0.86rem;
+  line-height: 1.42;
 }
 
 .pub-authors {
@@ -313,21 +316,22 @@ a {
 .pub-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
+  gap: 6px;
+  margin-top: 6px;
 }
 
 .pub-links > a,
 .bibtex summary {
   display: inline-flex;
   align-items: center;
-  min-height: 26px;
-  padding: 0 8px;
+  min-height: 22px;
+  padding: 0 7px;
   border: 1px solid rgba(44, 111, 145, 0.18);
   border-radius: 5px;
   color: var(--blue);
   background: rgba(44, 111, 145, 0.08);
   font-family: Lato, Arial, sans-serif;
+  font-size: 0.82rem;
   font-weight: 800;
   text-decoration: none;
   cursor: pointer;
@@ -357,29 +361,29 @@ a {
 
 .bibtex pre {
   overflow-x: auto;
-  margin: 10px 0 0;
-  padding: 14px;
+  margin: 8px 0 0;
+  padding: 10px;
   border: 1px solid var(--line);
   border-radius: 6px;
   color: #323a37;
   background: #f2f2ef;
   font-family: "Roboto Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 0.84rem;
+  font-size: 0.72rem;
   line-height: 1.45;
   white-space: pre;
 }
 
 .timeline {
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 176px minmax(0, 1fr);
-  gap: 26px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 16px;
   align-items: start;
-  padding: 26px;
+  padding: 16px;
 }
 
 .education-meta {
@@ -392,26 +396,32 @@ a {
 
 .education-logo {
   display: block;
-  width: 118px;
-  height: 118px;
+  width: 72px;
+  height: 72px;
   object-fit: contain;
 }
 
 .education-logo-wide {
-  width: 152px;
+  width: 94px;
 }
 
 .timeline-date {
   margin: 0;
   color: var(--coral);
   font-family: Lato, Arial, sans-serif;
-  font-size: 1.45rem;
+  font-size: 1rem;
   font-weight: 850;
   line-height: 1.1;
 }
 
 .timeline-item p {
-  margin: 7px 0 0;
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  line-height: 1.42;
+}
+
+.timeline-item h3 {
+  font-size: 0.98rem;
 }
 
 .timeline-item .detail {
@@ -429,19 +439,19 @@ a {
 
 .contact-line {
   display: grid;
-  grid-template-columns: 14px minmax(0, 1fr);
-  gap: 6px;
+  grid-template-columns: 16px minmax(0, 1fr);
+  gap: 8px;
   align-items: start;
   color: #2f78b7;
   font-family: Lato, Arial, sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   line-height: 1.28;
   text-decoration: none;
 }
 
 .contact-line svg {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   margin-top: 0;
   fill: none;
   stroke: currentColor;
@@ -452,21 +462,21 @@ a {
 
 .contact-icon-img {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   object-fit: contain;
 }
 
 .orcid-mark {
   display: grid;
   place-items: center;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   color: #ffffff;
   background: #a6ce39;
   font-family: Lato, Arial, sans-serif;
-  font-size: 0.36rem;
+  font-size: 0.42rem;
   font-weight: 850;
   line-height: 1;
   letter-spacing: 0;
@@ -587,11 +597,16 @@ a {
     font-size: 1rem;
   }
 
-  .publication,
+  .publication {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 12px 0 14px;
+  }
+
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 7px;
-    padding: 20px;
+    padding: 14px;
   }
 
   .links-sidebar {
@@ -599,12 +614,12 @@ a {
   }
 
   .education-logo {
-    width: 104px;
-    height: 104px;
+    width: 64px;
+    height: 64px;
   }
 
   .education-logo-wide {
-    width: 136px;
+    width: 84px;
   }
 
   .education-meta {
@@ -613,7 +628,7 @@ a {
   }
 
   .timeline-date {
-    font-size: 1.25rem;
+    font-size: 0.96rem;
   }
 }
 
@@ -623,11 +638,11 @@ a {
   }
 
   .profile-photo {
-    max-width: 80px;
+    max-width: 100px;
     aspect-ratio: 4 / 5;
   }
 
   .contact-line {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
