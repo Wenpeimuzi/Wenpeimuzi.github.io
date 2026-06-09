@@ -143,7 +143,7 @@ a {
 
 .profile-photo {
   display: block;
-  width: min(100%, 100px);
+  width: min(100%, 60px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 68% 50%;
@@ -420,7 +420,7 @@ a {
 
 .contact-panel {
   display: grid;
-  gap: 8px;
+  gap: 6px;
   padding: 0 4px;
   border: 0;
   background: transparent;
@@ -429,8 +429,8 @@ a {
 
 .contact-line {
   display: grid;
-  grid-template-columns: 14px minmax(0, 1fr);
-  gap: 7px;
+  grid-template-columns: 12px minmax(0, 1fr);
+  gap: 6px;
   align-items: start;
   color: #2f78b7;
   font-family: Lato, Arial, sans-serif;
@@ -440,8 +440,8 @@ a {
 }
 
 .contact-line svg {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   margin-top: 0;
   fill: none;
   stroke: currentColor;
@@ -452,21 +452,21 @@ a {
 
 .contact-icon-img {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   object-fit: contain;
 }
 
 .orcid-mark {
   display: grid;
   place-items: center;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   color: #ffffff;
   background: #a6ce39;
   font-family: Lato, Arial, sans-serif;
-  font-size: 0.36rem;
+  font-size: 0.3rem;
   font-weight: 850;
   line-height: 1;
   letter-spacing: 0;
@@ -623,11 +623,11 @@ a {
   }
 
   .profile-photo {
-    max-width: 100px;
+    max-width: 60px;
     aspect-ratio: 4 / 5;
   }
 
   .contact-line {
-    font-size: 0.62rem;
+    font-size: 0.5rem;
   }
 }
