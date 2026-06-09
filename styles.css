@@ -122,7 +122,7 @@ a {
 
 .page-shell {
   display: grid;
-  grid-template-columns: minmax(210px, 280px) minmax(0, 760px) minmax(220px, 290px);
+  grid-template-columns: minmax(176px, 218px) minmax(0, 760px) minmax(205px, 270px);
   gap: 38px;
   width: min(1280px, calc(100% - 56px));
   margin: 0 auto;
@@ -136,9 +136,14 @@ a {
   top: 94px;
 }
 
+.links-sidebar {
+  margin-top: 28px;
+  top: 122px;
+}
+
 .profile-photo {
   display: block;
-  width: 100%;
+  width: min(100%, 200px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 68% 50%;
@@ -147,7 +152,7 @@ a {
 }
 
 .profile-card {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .profile-card .eyebrow a {
@@ -171,10 +176,10 @@ a {
 }
 
 .role {
-  margin: 16px 0 0;
+  margin: 14px 0 0;
   color: var(--muted);
   font-family: Lato, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.92rem;
   line-height: 1.45;
 }
 
@@ -190,22 +195,22 @@ a {
 
 .tag-list {
   display: grid;
-  gap: 8px;
-  margin-top: 22px;
+  gap: 7px;
+  margin-top: 18px;
 }
 
 .tag-list span {
   display: flex;
   align-items: center;
   width: fit-content;
-  min-height: 30px;
-  padding: 0 10px;
+  min-height: 26px;
+  padding: 0 8px;
   border: 1px solid var(--line);
   border-radius: 8px;
   color: var(--ink);
   background: rgba(255, 255, 255, 0.7);
   font-family: Lato, Arial, sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   font-weight: 680;
 }
 
@@ -415,8 +420,8 @@ a {
 
 .contact-panel {
   display: grid;
-  gap: 18px;
-  padding: 18px 4px;
+  gap: 14px;
+  padding: 14px 4px;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -424,19 +429,19 @@ a {
 
 .contact-line {
   display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 12px;
   align-items: start;
   color: #2f78b7;
   font-family: Lato, Arial, sans-serif;
-  font-size: 1.12rem;
-  line-height: 1.35;
+  font-size: 0.98rem;
+  line-height: 1.3;
   text-decoration: none;
 }
 
 .contact-line svg {
-  width: 28px;
-  height: 28px;
+  width: 23px;
+  height: 23px;
   margin-top: 1px;
   fill: none;
   stroke: currentColor;
@@ -447,9 +452,24 @@ a {
 
 .contact-icon-img {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
+}
+
+.orcid-mark {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #ffffff;
+  background: #a6ce39;
+  font-family: Lato, Arial, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .contact-line span {
@@ -488,6 +508,7 @@ a {
   .links-sidebar {
     grid-column: 2;
     position: static;
+    margin-top: 0;
   }
 
   .contact-panel {
@@ -500,6 +521,11 @@ a {
     min-height: 62px;
     padding: 0 20px;
     gap: 12px;
+  }
+
+  .brand {
+    font-size: 0.92rem;
+    line-height: 1.25;
   }
 
   .menu-toggle {
@@ -557,6 +583,10 @@ a {
     padding-bottom: 54px;
   }
 
+  .prose p {
+    font-size: 1rem;
+  }
+
   .publication,
   .timeline-item {
     grid-template-columns: 1fr;
@@ -593,11 +623,11 @@ a {
   }
 
   .profile-photo {
-    max-width: 240px;
+    max-width: 200px;
     aspect-ratio: 4 / 5;
   }
 
   .contact-line {
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
 }
