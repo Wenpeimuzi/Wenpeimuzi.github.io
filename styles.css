@@ -137,13 +137,13 @@ a {
 }
 
 .links-sidebar {
-  margin-top: 28px;
-  top: 122px;
+  margin-top: 0;
+  top: 94px;
 }
 
 .profile-photo {
   display: block;
-  width: min(100%, 200px);
+  width: min(100%, 100px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 68% 50%;
@@ -228,7 +228,7 @@ a {
 }
 
 .intro-section {
-  padding-top: 4px;
+  padding-top: 0;
 }
 
 .section-heading {
@@ -420,8 +420,8 @@ a {
 
 .contact-panel {
   display: grid;
-  gap: 14px;
-  padding: 14px 4px;
+  gap: 8px;
+  padding: 0 4px;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -429,20 +429,20 @@ a {
 
 .contact-line {
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: 14px minmax(0, 1fr);
+  gap: 7px;
   align-items: start;
   color: #2f78b7;
   font-family: Lato, Arial, sans-serif;
-  font-size: 0.98rem;
-  line-height: 1.3;
+  font-size: 0.5rem;
+  line-height: 1.28;
   text-decoration: none;
 }
 
 .contact-line svg {
-  width: 23px;
-  height: 23px;
-  margin-top: 1px;
+  width: 12px;
+  height: 12px;
+  margin-top: 0;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
@@ -452,21 +452,21 @@ a {
 
 .contact-icon-img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
   object-fit: contain;
 }
 
 .orcid-mark {
   display: grid;
   place-items: center;
-  width: 24px;
-  height: 24px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   color: #ffffff;
   background: #a6ce39;
   font-family: Lato, Arial, sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.36rem;
   font-weight: 850;
   line-height: 1;
   letter-spacing: 0;
@@ -623,11 +623,11 @@ a {
   }
 
   .profile-photo {
-    max-width: 200px;
+    max-width: 100px;
     aspect-ratio: 4 / 5;
   }
 
   .contact-line {
-    font-size: 0.92rem;
+    font-size: 0.62rem;
   }
 }
