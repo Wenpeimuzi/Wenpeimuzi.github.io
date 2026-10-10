@@ -1,6 +1,6 @@
 # Wenpei Li
 
-Personal academic website for Wenpei Li, Research Assistant at the Urban Analytics Lab, National University of Singapore.
+Personal academic website for Wenpei Li, Research Fellow at the Urban Analytics Lab, National University of Singapore.
 
 Website: https://wenpeimuzi.github.io/
 
